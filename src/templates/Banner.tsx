@@ -7,7 +7,7 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="No te pierdas el evento "
+      title="No te pierdas el congreso "
       subtitle="24, 25, 26 y 27 de Noviembre 2022"
       button={
         <Link href="/contacto">

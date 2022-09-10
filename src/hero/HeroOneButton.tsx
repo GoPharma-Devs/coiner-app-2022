@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+import Image from 'next/image';
+
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
@@ -8,10 +10,15 @@ type IHeroOneButtonProps = {
 
 const HeroOneButton = (props: IHeroOneButtonProps) => (
   <header className="text-center">
-    <h1 className="text-5xl text-gray-900 font-bold whitespace-pre-line leading-hero">
-      {props.title}
-    </h1>
-    <div className="text-2xl mt-4 mb-16">{props.description}</div>
+    <Image
+      src="/assets/images/congreso.png"
+      alt="hero"
+      width={1044}
+      height={234}
+    />
+    <h2 className="text-2xl text-[#FF1EC7] font-semibold mt-4 mb-16">
+      {props.description}
+    </h2>
 
     {props.button}
   </header>
