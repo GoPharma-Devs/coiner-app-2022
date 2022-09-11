@@ -9,7 +9,7 @@ import { Logo } from './Logo';
 
 const Hero = () => (
   <Background color="bg-gray-100">
-    <Section yPadding="py-6">
+    <Section yPadding="py-0 pb-0 px-5">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
           <Link href="/">
@@ -24,7 +24,7 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-0 pb-0">
       <HeroOneButton
         title={
           <>
