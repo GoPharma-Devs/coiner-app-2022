@@ -1,9 +1,10 @@
 # coiner-app-2022
-[]: # Title: coiner-app-2022
-[]: # Version: 0.1.0
-[]: # Date: 2022-09-07
-[]: # Authors: [Carlos Boyzo Oregon]
-[]: #
+# Title: coiner-app-2022
+# Version: 0.1.0
+# Date: 2022-09-07
+# Authors: [Carlos Boyzo Oregon]
+# Maintainer: [Carlos Boyzo Oregon]
+
 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -1,20 +1,15 @@
 import { Meta } from '../layout/Meta';
+import LoginPage from '../login/LoginPage';
 import { AppConfig } from '../utils/AppConfig';
-import { Banner } from './Banner';
 import { Footer } from './Footer';
-import { Hero } from './Hero';
-import { VerticalFeatures } from './VerticalFeatures';
 
-const Contacto = () => (
+const Login = () => (
   <div className="antialiased text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
 
-    <Hero />
-    <h1>Contacto</h1>
-    <VerticalFeatures />
-    <Banner />
+    <LoginPage />
     <Footer />
   </div>
 );
 
-export { Contacto };
+export { Login };
