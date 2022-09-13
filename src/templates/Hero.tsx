@@ -22,7 +22,7 @@ const Hero = () => (
           </Link>
         </li>
         <li>
-          <Link href="/registro">
+          <Link href="registro">
             <a>Registro</a>
           </Link>
         </li>
