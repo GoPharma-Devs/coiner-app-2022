@@ -17,7 +17,7 @@ const Hero = () => (
           </Link>
         </li>
         <li className="boton">
-          <Link href="/congreso">
+          <Link href="/login">
             <a>Congreso</a>
           </Link>
         </li>
