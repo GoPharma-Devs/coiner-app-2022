@@ -9,7 +9,7 @@ type ICTABannerProps = {
 const CTABanner = (props: ICTABannerProps) => (
   <div className="text-center flex flex-col p-4 sm:text-left sm:flex-row sm:items-center sm:justify-between sm:p-12 bg-[#B7DDFF] rounded-md max-w-screen-lg m-auto">
     <div className="text-2xl font-semibold">
-      <div className="text-gray-900">{props.title}</div>
+      <div className="text-[#225E95]">{props.title}</div>
       <div className="text-primary-500">{props.subtitle}</div>
     </div>
 

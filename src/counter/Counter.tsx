@@ -24,7 +24,7 @@ function Counter() {
 
   return (
     <>
-      <div className="flex py-8 items-center justify-center bg-[#0C4E8B] text-white ">
+      <div className="flex flex-wrap py-8 items-center justify-center bg-[#0C4E8B] text-white ">
         <p className="text-4xl px-1">Reserva la fecha</p>
         <ul className="flex  p-4 leading-9">
           <li className="p-2 flex flex-col text-center">
