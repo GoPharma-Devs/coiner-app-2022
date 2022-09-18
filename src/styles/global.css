@@ -22,8 +22,9 @@ body:before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   opacity: 0.2;
+  background: rgb(255, 255, 255);
 
   background: rgba(255, 255, 255, 0.073) url('/assets/images/bg-coiner.png')
     center center/cover repeat fixed;
@@ -48,11 +49,11 @@ body:before {
   width: 100%;
   min-height: 65vh;
   z-index: 0;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-   mix-blend-mode: multiply;
+
   position: relative;
 }
 .header:before {
@@ -74,10 +75,51 @@ body:before {
   font-weight: 500;
   cursor: pointer;
 }
+.navbar,
+.menu {
+  position: relative;
+  background: rgb(255, 255, 255) !important;
+  opacity: 1;
+}
 
+.navbar-footer{
+  background:transparent !important;
+
+}
+
+.navbar-footer li{
+  margin:0 0.5rem;
+}
 .boton {
   background: rgb(12 78 139);
   padding: 0.5rem;
   border-radius: 8px;
   color: #fff;
+}
+
+.notFound {
+  font-size: 2rem;
+  color: rgb(12 78 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.notFound span {
+  font-weight: lighter;
+  font-size: 2.5rem;
+  color: #1987ed;
+}
+
+.btn {
+  margin-top: 1.4rem;
+  background: #0c4e8b;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
