@@ -24,8 +24,25 @@ function Counter() {
 
   return (
     <>
-      <div className="flex flex-wrap py-8 items-center justify-center bg-[#0C4E8B] text-white ">
-        <p className="text-4xl px-1">Reserva la fecha</p>
+      <div className="flex  flex-wrap py-8 items-center justify-center bg-[#0C4E8B] text-white ">
+        <p className="  text-4xl px-2 flex align justify-center">
+          <svg
+            className="mx-2 flex-shrink-0 w-10 h-10 text-[#FF1EC7]"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            />
+          </svg>
+          Reserva la fecha
+        </p>
         <ul className="flex  p-4 leading-9">
           <li className="p-2 flex flex-col text-center">
             <span className="text-5xl mb-0 ">{days}</span>

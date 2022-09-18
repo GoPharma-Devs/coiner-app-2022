@@ -5,7 +5,6 @@ type ISectionProps = {
   description?: string;
   yPadding?: string;
   children: ReactNode;
-  
 };
 
 const Section = (props: ISectionProps) => (

@@ -10,8 +10,8 @@ const NotFound = () => (
 
     <section className="notFound h-screen  flex flex-col justify-center align-middle text-center">
       <h1>
-        404<span>|</span> 
-         Pagína no encontrada, por favor,
+        404<span>|</span>
+        Pagína no encontrada, por favor,
       </h1>
       <Link href="/">
         <a className="btn">Regresar al inicio </a>
