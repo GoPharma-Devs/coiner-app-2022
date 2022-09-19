@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Link from 'next/link';
+
 function Navbar() {
   const [open, setOpen] = React.useState(false);
 
@@ -130,65 +132,38 @@ function Navbar() {
             </div>
             <div className="menu bg-white grid gap-y-8 py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a
-                  href="#"
+                <Link
+                  href="/nosotros"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Nosotros
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  href="/contacto"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Contacto
-                </a>
-                <a
-                  href="#"
+                </Link>
+
+                <Link
+                  href="/registro"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
-                  Enterprise
-                </a>
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Blog
-                </a>
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Help Center
-                </a>
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Guides
-                </a>
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Security
-                </a>
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Events
-                </a>
+                  Registro
+                </Link>
               </div>
               <div>
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#0c4e8b] hover:bg-[#1ecdfa]"
-                >
-                  Congreso
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-[#0c4e8b]">
-                  Existing customer?
-                  <a href="#" className="text-[#0c4e8b] hover:text-indigo-500">
+                <Link href="/congreso">
+                  <a className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#0c4e8b] hover:bg-[#1ecdfa]">
+                    Congreso
+                  </a>
+                </Link>
+                <p className="mt-6 text-center text-base  text-[#6491bb]">
+                  ¿No tienes acceso? <br />
+                  <a
+                    href="/registro"
+                    className="text-[#0c4e8b] font-medium hover:text-indigo-500"
+                  >
                     Registro
                   </a>
                 </p>
