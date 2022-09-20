@@ -81,7 +81,6 @@ const Base = () => (
               style={{ color: 'transparent' }}
             />
           </div>
-         
         </div>
       </div>
     </section>
@@ -127,7 +126,6 @@ const Base = () => (
               style={{ color: 'transparent' }}
             />
           </div>
-         
         </div>
       </div>
     </section>
