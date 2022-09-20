@@ -12,14 +12,16 @@ function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
-                <span className="sr-only">Workflow</span>
-                <img
-                  className="h-8 w-auto sm:h-10"
-                  src="/assets/images/logo.svg"
-                  alt=""
-                />
-              </a>
+              <Link href="/">
+                <a>
+                  <span className="sr-only">Coiner® 2022</span>
+                  <img
+                    className="h-8 w-auto sm:h-10"
+                    src="/assets/images/logo.svg"
+                    alt=""
+                  />
+                </a>
+              </Link>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
               <button
@@ -48,29 +50,26 @@ function Navbar() {
             </div>
 
             <nav className="hidden md:flex space-x-10 items-center justify-end md:flex-1 lg:w-0">
+              <Link href="#">
+                <a className="text-base font-medium text-[#0c4e8b] hover:text-gray-900">
+                  Nosotros
+                </a>
+              </Link>
+              <Link href="/contacto">
+                <a className="text-base font-medium text-[#0c4e8b] hover:text-gray-900">
+                  Contacto
+                </a>
+              </Link>
+              <Link href="/registro">
+                <a className="whitespace-nowrap text-base font-medium text-[#0c4e8b] hover:text-gray-900">
+                  Registro
+                </a>
+              </Link>
               <a
-                href="#"
-                className="text-base font-medium text-[#0c4e8b] hover:text-gray-900"
-              >
-                Nosotros
-              </a>
-              <a
-                href="#"
-                className="text-base font-medium text-[#0c4e8b] hover:text-gray-900"
-              >
-                Contacto
-              </a>
-              <a
-                href="#"
-                className="whitespace-nowrap text-base font-medium text-[#0c4e8b] hover:text-gray-900"
-              >
-                Registro
-              </a>
-              <a
-                href="#"
+                href="https://2021.coiner.org/"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#0c4e8b] hover:bg-[#1ecdfa]"
               >
-                Congreso
+                Revive COINER<sup>® </sup> 2021
               </a>
             </nav>
           </div>
@@ -145,11 +144,10 @@ function Navbar() {
                   Contacto
                 </Link>
 
-                <Link
-                  href="/registro"
-                  className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Registro
+                <Link href="/registro">
+                  <a className="text-base font-medium text-gray-900 hover:text-gray-700">
+                    Registro
+                  </a>
                 </Link>
               </div>
               <div>
@@ -160,12 +158,11 @@ function Navbar() {
                 </Link>
                 <p className="mt-6 text-center text-base  text-[#6491bb]">
                   ¿No tienes acceso? <br />
-                  <a
-                    href="/registro"
-                    className="text-[#0c4e8b] font-medium hover:text-indigo-500"
-                  >
-                    Registro
-                  </a>
+                  <Link href="/registro">
+                    <a className="text-[#0c4e8b] font-medium hover:text-indigo-500">
+                      Registro
+                    </a>
+                  </Link>
                 </p>
               </div>
             </div>
