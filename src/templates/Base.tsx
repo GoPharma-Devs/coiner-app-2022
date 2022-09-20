@@ -36,7 +36,7 @@ const Base = () => (
           <div className="flex items-center justify-center">
             <img
               alt="Go Pharma"
-              src="https://firebasestorage.googleapis.com/v0/b/comite-coiner.appspot.com/o/Patrocinadores%2F5.png?alt=media&token=61b94360-9994-4e72-a693-f59f746a80c4"
+              src="https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/gopharma-logo.png?alt=media&token=396b8608-07b1-48c9-91d2-619ad1b2cd90"
               width={105}
               height={48}
               decoding="async"
