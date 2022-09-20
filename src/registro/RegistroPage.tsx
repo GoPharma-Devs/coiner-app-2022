@@ -1,6 +1,8 @@
+import Link from 'next/link';
+
 export default function LoginPage() {
   return (
-    <div className=" mt-5 sm:mt-1 h-[710px] flex justify-center content-evenly ">
+    <div className="p-5 mt-5 sm:mt-1  sm:h-full flex justify-center content-evenly ">
       <div className="mt-2 sm:mt-2">
         <div className=" md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">
@@ -17,7 +19,7 @@ export default function LoginPage() {
             <form action="/" method="POST">
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
-                  <div className="grid grid-cols-6 gap-6">
+                  <div className="grid grid-cols-5 gap-6">
                     <div className="col-span-6 sm:col-span-3">
                       <label
                         htmlFor="name"
@@ -75,6 +77,7 @@ export default function LoginPage() {
                       </label>
                       <input
                         required
+                        minLength={8}
                         type="password"
                         name="password"
                         id="password"
@@ -507,6 +510,32 @@ export default function LoginPage() {
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0c4f8a] focus:ring-[#0c4f8a] sm:text-sm"
                       />
                     </div>
+                    <div className="flex content-center col-span-6 sm:col-span-3 lg:col-span-6">
+                      <input
+                        className="check mx-2"
+                        type="checkbox"
+                        name="terms"
+                        id="terms"
+                        required
+                      />
+
+                      <label
+                        htmlFor="enrollment"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Acepto los Términos y condiciones y el Aviso de
+                        Privacidad
+                        <br />
+                        <small className="text-[#1171c4]">
+                          <Link href="/terminosycondiciones">
+                            <a>
+                              {' '}
+                              Leer Términos y condiciones y Aviso de Privacidad
+                            </a>
+                          </Link>
+                        </small>
+                      </label>
+                    </div>
                   </div>
                 </div>
                 <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
@@ -514,7 +543,7 @@ export default function LoginPage() {
                     type="submit"
                     className="inline-flex justify-center rounded-md border border-transparent bg-[#0c4f8a] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#0c4f8a] focus:outline-none focus:ring-2 focus:ring--[#0c4f8a] focus:ring-offset-2"
                   >
-                    Guardar
+                    Registro
                   </button>
                 </div>
               </div>
