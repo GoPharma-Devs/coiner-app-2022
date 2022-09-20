@@ -50,7 +50,7 @@ function Navbar() {
             </div>
 
             <nav className="hidden md:flex space-x-10 items-center justify-end md:flex-1 lg:w-0">
-              <Link href="#">
+              {/* <Link href="#">
                 <a className="text-base font-medium text-[#0c4e8b] hover:text-gray-900">
                   Nosotros
                 </a>
@@ -59,7 +59,7 @@ function Navbar() {
                 <a className="text-base font-medium text-[#0c4e8b] hover:text-gray-900">
                   Contacto
                 </a>
-              </Link>
+              </Link> */}
               <Link href="/registro">
                 <a className="whitespace-nowrap text-base font-medium text-[#0c4e8b] hover:text-gray-900">
                   Registro
