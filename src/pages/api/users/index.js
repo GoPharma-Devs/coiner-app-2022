@@ -20,8 +20,7 @@ export default async function handler(req, res) {
         await newUser.save();
         return res.redirect('/gracias');
       } catch (error) {
-        return res.status(404).json({ msg: error.message });
-      }
+        return res.redirect('/gracias');
     default:
       return res.status(400).json({ msg: 'This method is not supported' });
   }
