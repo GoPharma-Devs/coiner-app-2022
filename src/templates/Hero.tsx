@@ -14,7 +14,7 @@ const Hero = () => (
             <span className="text-primary-500">DE ENFERMEDADES RARAS</span>
           </>
         }
-        description="24, 25, 26 y 27 de Noviembre 2022."
+        description="24, 25, 26 y 27 de noviembre 2022."
         button={
           <Link href="/registro">
             <a>
