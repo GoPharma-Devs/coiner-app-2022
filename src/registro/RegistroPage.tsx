@@ -1,8 +1,8 @@
-import Link from 'next/link';
+
 import { useState } from 'react';
 import axios from 'axios';
 import Router from 'next/router';
-
+import Link from 'next/link';
 export default function LoginPage() {
   const [credentials, setCredentials] = useState({
     name: '',

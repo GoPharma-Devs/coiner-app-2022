@@ -3,7 +3,7 @@ import { dbConnect } from 'utils/db';
 
 dbConnect();
 
-export default async (req, res) => {
+export default async function handler(req, res) {
   const { method, body } = req;
 
   switch (method) {
@@ -25,4 +25,4 @@ export default async (req, res) => {
     default:
       return res.status(400).json({ msg: 'This method is not supported' });
   }
-};
+}
