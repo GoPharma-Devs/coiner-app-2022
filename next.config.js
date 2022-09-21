@@ -14,12 +14,12 @@ module.exports = withBundleAnalyzer({
 });
 // next.config.js
 module.exports = {
-    async rewrites() {
-        return [
-          {
-            source: '/api/:path*',
-            destination: 'https://api.example.com/:path*',
-          },
-        ]
+  async rewrites() {
+    return [
+      {
+        source: '/api/users',
+        destination: 'https://coiner.org/api/users',
       },
-  };
+    ];
+  },
+};

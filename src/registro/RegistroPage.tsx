@@ -43,7 +43,7 @@ export default function LoginPage() {
                 Registro COINER<sup>®</sup> 2022,
               </h2>
               <h3 className="mt-1 text-sm text-gray-600">
-                Reserva la Fecha <br /> nov 25, 26 y 27 de noviembre
+                Reserva la Fecha <br /> nov 24, 25, 26 y 27 de noviembre
               </h3>
             </div>
           </div>
