@@ -1,8 +1,9 @@
-
 import { useState } from 'react';
+
 import axios from 'axios';
-import Router from 'next/router';
 import Link from 'next/link';
+import Router from 'next/router';
+
 export default function LoginPage() {
   const [credentials, setCredentials] = useState({
     name: '',
@@ -18,14 +19,14 @@ export default function LoginPage() {
     terms: '',
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     setCredentials({
       ...credentials,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     await axios.post('/api/users', credentials);
