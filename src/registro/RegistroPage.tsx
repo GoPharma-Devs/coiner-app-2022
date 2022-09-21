@@ -40,7 +40,6 @@ export default function LoginPage() {
     }).then((res) => {
       if (res.status === 200) {
         console.log('success');
-        setCredentials;
         Router.push('/gracias');
       }
     });
