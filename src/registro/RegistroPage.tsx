@@ -39,7 +39,7 @@ export default function LoginPage() {
 
       body: JSON.stringify(data),
     }).then((res) => {
-      if (res.status === 200) {
+      if (res.status === 307) {
         console.log('success');
         window.location.href = 'https://coiner.org/gracias';
       }
