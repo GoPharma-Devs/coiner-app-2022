@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import axios from 'axios';
 import Link from 'next/link';
 import Router from 'next/router';
 
@@ -29,8 +28,8 @@ export default function LoginPage() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    let data = credentials
-    console.log(data)
+    const data = credentials;
+    console.log(data);
 
     fetch('/api/users', {
       method: 'POST',
@@ -40,13 +39,12 @@ export default function LoginPage() {
       body: JSON.stringify(data),
     }).then((res) => {
       if (res.status === 200) {
-        console.log('success')
-        setCredentials
+        console.log('success');
+        setCredentials;
         Router.push('/gracias');
       }
-    })
-  
-  }
+    });
+  };
 
   return (
     <div className="p-5 mt-5 sm:mt-1  sm:h-full flex justify-center content-evenly ">
