@@ -32,14 +32,16 @@ export default function LoginPage() {
 
     fetch('/api/users', {
       method: 'POST',
+
       headers: {
         'Content-Type': 'application/json',
       },
+
       body: JSON.stringify(data),
     }).then((res) => {
       if (res.status === 200) {
         console.log('success');
-        window.location.href = '/gracias';
+        window.location.href = 'https://coiner.org/gracias';
       }
     });
   };
