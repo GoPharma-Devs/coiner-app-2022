@@ -18,14 +18,14 @@ export default function LoginPage() {
     terms: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setCredentials({
       ...credentials,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
 
     await axios.post('/api/users', credentials);
