@@ -29,7 +29,7 @@ export default function LoginPage() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    await axios.post('https://coiner.org/api/users', credentials);
+    await axios.post('/api/users', credentials);
     Router.push('/gracias');
   };
 
