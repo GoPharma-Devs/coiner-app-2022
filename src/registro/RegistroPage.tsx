@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import Link from 'next/link';
-import Router from 'next/router';
 
 export default function LoginPage() {
   const [credentials, setCredentials] = useState({
@@ -40,7 +39,7 @@ export default function LoginPage() {
     }).then((res) => {
       if (res.status === 200) {
         console.log('success');
-        Router.push('/gracias');
+        window.location.href = '/gracias';
       }
     });
   };
