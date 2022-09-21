@@ -21,7 +21,7 @@
     "noFallthroughCasesInSwitch": true,
 
     "target": "es5",
-    "outDir": "out",
+    "outDir": ".next",
     "declaration": true,
     "sourceMap": true,
 
