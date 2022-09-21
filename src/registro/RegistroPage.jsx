@@ -28,7 +28,7 @@ export default function LoginPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await axios.post('http://localhost:3000/api/users', credentials);
+    await axios.post('/api/users', credentials);
     Router.push('/gracias');
   };
 
