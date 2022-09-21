@@ -26,7 +26,9 @@
       "parserOptions": {
         "project": "./tsconfig.json"
       },
+
       "rules": {
+        "no-console": "off",
         "prettier/prettier": [
           "error",
           {

@@ -37,5 +37,5 @@
     "incremental": true
   },
   "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/counter/Counter.jsx", "src/counter/Clock.jsx", "src/counter/Clock.js", "src/registro/RegistroPage.jsx"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/counter/Counter.jsx", "src/counter/Clock.jsx", "src/counter/Clock.js", "src/utils/db.js", "src/registro/RegistroPage.jsx"]
 }
