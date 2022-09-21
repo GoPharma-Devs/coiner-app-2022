@@ -1,9 +1,5 @@
 # coiner-app-2022
-# Title: coiner-app-2022
-# Version: 0.1.0
-# Date: 2022-09-07
-# Authors: [Carlos Boyzo Oregon]
-# Maintainer: [Carlos Boyzo Oregon]
+
 
 
 
