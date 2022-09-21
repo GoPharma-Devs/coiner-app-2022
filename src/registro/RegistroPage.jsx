@@ -1,6 +1,37 @@
 import Link from 'next/link';
+import { useState } from 'react';
+import axios from 'axios';
+import Router from 'next/router';
 
 export default function LoginPage() {
+  const [credentials, setCredentials] = useState({
+    name: '',
+    lastName: '',
+    email: '',
+    password: '',
+    country: '',
+    city: '',
+    ocupation: '',
+    enrollment: '',
+    speciality: '',
+    institution: '',
+    terms: '',
+  });
+
+  const handleChange = (e) => {
+    setCredentials({
+      ...credentials,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    await axios.post('http://localhost:3000/api/users', credentials);
+    Router.push('/gracias');
+  };
+
   return (
     <div className="p-5 mt-5 sm:mt-1  sm:h-full flex justify-center content-evenly ">
       <div className="mt-2 sm:mt-2">
@@ -16,7 +47,7 @@ export default function LoginPage() {
             </div>
           </div>
           <div className="shadow-md mt-5 md:col-span-2 md:mt-0">
-            <form action="/" method="POST">
+            <form onSubmit={handleSubmit}>
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
                   <div className="grid grid-cols-5 gap-6">
@@ -25,9 +56,10 @@ export default function LoginPage() {
                         htmlFor="name"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Nombre
+                        Nombre<span className="text-gray-600">(s)</span>
                       </label>
                       <input
+                        onChange={handleChange}
                         required
                         type="text"
                         name="name"
@@ -41,9 +73,10 @@ export default function LoginPage() {
                         htmlFor="lastName"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Apellido
+                        Apellido<span className="text-gray-600">(s)</span>
                       </label>
                       <input
+                        onChange={handleChange}
                         required
                         type="text"
                         name="lastName"
@@ -52,7 +85,7 @@ export default function LoginPage() {
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0c4f8a] focus:ring-[#0c4f8a] sm:text-sm"
                       />
                     </div>
-                    <div className="col-span-6 sm:col-span-4">
+                    <div className="col-span-6 sm:col-span-6">
                       <label
                         htmlFor="email"
                         className="block text-sm font-medium text-gray-700"
@@ -60,6 +93,7 @@ export default function LoginPage() {
                         Correo electrónico
                       </label>
                       <input
+                        onChange={handleChange}
                         required
                         type="email"
                         name="email"
@@ -76,6 +110,7 @@ export default function LoginPage() {
                         Contraseña
                       </label>
                       <input
+                        onChange={handleChange}
                         required
                         minLength={8}
                         type="password"
@@ -84,6 +119,7 @@ export default function LoginPage() {
                         autoComplete="off"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#0c4f8a] focus:ring-[#0c4f8a] sm:text-sm"
                       />
+                      <small> use al menos 8 caracteres </small>
                     </div>
                     <div className="col-span-6 sm:col-span-3">
                       <label
@@ -92,12 +128,18 @@ export default function LoginPage() {
                       >
                         País
                       </label>
+
                       <select
+                        required
+                        onChange={(e) => {
+                          handleChange(e);
+                        }}
                         id="country"
                         name="country"
-                        autoComplete="country-name"
                         className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border--[#0c4f8a] focus:outline-none focus:ring--[#0c4f8a] sm:text-sm"
                       >
+                        <option value="default">Selecciona tu país</option>
+
                         <option value="Mexico">Mexico</option>
                         <option value="United States of America">
                           United States of America
@@ -442,6 +484,8 @@ export default function LoginPage() {
                         Ciudad
                       </label>
                       <input
+                        required
+                        onChange={handleChange}
                         type="text"
                         name="city"
                         id="city"
@@ -457,6 +501,7 @@ export default function LoginPage() {
                       </label>
                       <input
                         required
+                        onChange={handleChange}
                         type="text"
                         name="ocupation"
                         id="ocupation"
@@ -473,6 +518,7 @@ export default function LoginPage() {
                       </label>
                       <input
                         required
+                        onChange={handleChange}
                         type="text"
                         name="institution"
                         id="institution"
@@ -488,6 +534,7 @@ export default function LoginPage() {
                       </label>
                       <input
                         required
+                        onChange={handleChange}
                         type="text"
                         name="speciality"
                         id="speciality"
@@ -502,6 +549,8 @@ export default function LoginPage() {
                         Cedula o numero de matricula
                       </label>
                       <input
+                        required
+                        onChange={handleChange}
                         minLength={8}
                         type="text"
                         name="enrollment"
@@ -512,6 +561,7 @@ export default function LoginPage() {
                     </div>
                     <div className="flex content-center col-span-6 sm:col-span-3 lg:col-span-6">
                       <input
+                        onChange={handleChange}
                         className="check mx-2"
                         type="checkbox"
                         name="terms"
@@ -520,14 +570,13 @@ export default function LoginPage() {
                       />
 
                       <label
-                        htmlFor="enrollment"
+                        htmlFor="terms"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Acepto los Términos y condiciones y el Aviso de
-                        Privacidad
+                        Acepto Términos y condiciones y el Aviso de Privacidad
                         <br />
                         <small className="text-[#1171c4]">
-                          <Link href="/terminosycondiciones">
+                          <Link href="/aviso">
                             <a>
                               {' '}
                               Leer Términos y condiciones y Aviso de Privacidad

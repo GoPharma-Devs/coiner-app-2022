@@ -9,16 +9,16 @@ export default async (req, res) => {
   switch (method) {
     case 'GET':
       try {
-        const tasks = await User.find();
-        return res.status(200).json(tasks);
+        const user = await User.find();
+        return res.status(200).json(user);
       } catch (error) {
         return res.status(400).json({ msg: error.message });
       }
     case 'POST':
       try {
         const newUser = new User(body);
-        const savedUser = await newUser.save();
-        return res.status(201).json(savedUser);
+        await newUser.save();
+        return res.redirect('/');
       } catch (error) {
         return res.status(400).json({ msg: error.message });
       }

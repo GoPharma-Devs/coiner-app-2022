@@ -45,13 +45,12 @@ const userSchema = new Schema(
       required: true,
     },
     terms: {
-      type: Boolean,
+      type: String,
       required: true,
     },
   },
   {
     timestamps: true,
-    versionKey: false,
   }
 );
 
