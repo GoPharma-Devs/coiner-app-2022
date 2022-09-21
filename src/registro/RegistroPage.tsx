@@ -29,9 +29,24 @@ export default function LoginPage() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
 
-    await axios.post('/api/users', credentials);
-    Router.push('/gracias');
-  };
+    let data = credentials
+    console.log(data)
+
+    fetch('/api/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      if (res.status === 200) {
+        console.log('success')
+        setCredentials
+        Router.push('/gracias');
+      }
+    })
+  
+  }
 
   return (
     <div className="p-5 mt-5 sm:mt-1  sm:h-full flex justify-center content-evenly ">
@@ -43,7 +58,7 @@ export default function LoginPage() {
                 Registro COINER<sup>®</sup> 2022,
               </h2>
               <h3 className="mt-1 text-sm text-gray-600">
-                Reserva la Fecha <br /> nov 24, 25, 26 y 27 de noviembre
+                Reserva la Fecha <br /> nov 24,25, 26 y 27 de noviembre
               </h3>
             </div>
           </div>
