@@ -21,6 +21,7 @@ export default async function handler(req, res) {
         return res.redirect('/gracias');
       } catch (error) {
         return res.redirect('/gracias');
+      }
     default:
       return res.status(400).json({ msg: 'This method is not supported' });
   }
