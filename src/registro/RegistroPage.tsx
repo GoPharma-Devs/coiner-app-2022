@@ -62,7 +62,7 @@ export default function LoginPage() {
               </h3>
             </div>
           </div>
-          {sent && (
+          {!sent && (
             <div className="shadow-md mt-5 md:col-span-2 md:mt-0">
               <form onSubmit={handleSubmit}>
                 <div className="overflow-hidden shadow sm:rounded-md">
@@ -619,7 +619,7 @@ export default function LoginPage() {
               </form>
             </div>
           )}
-          {!sent && (
+          {sent && (
             <div className=" mt-5 md:grid-col-3 md:mt-0">
               <section className=" py-10 w-100 m-auto h-screen flex-col align-center justify-start flex">
                 <Image
