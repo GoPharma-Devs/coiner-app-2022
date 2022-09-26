@@ -43,7 +43,6 @@ export default function LoginPage() {
     }).then((res) => {
       if (res.status === 307) {
         console.log('success');
-        window.location.href = 'https://coiner.org/gracias';
       }
     });
   };
@@ -57,12 +56,13 @@ export default function LoginPage() {
               <h2 className="text-xl font-medium leading-6 text-[#0c4f8a]">
                 Registro COINER<sup>®</sup> 2022,
               </h2>
-              <h3 className="mt-1 text-sm text-gray-600">
-                Reserva la Fecha <br /> nov 24,25, 26 y 27 de noviembre
+              <h3 className="mt-1 text-sm text-[#0c4f8a]">
+                Reserva la Fecha <br />{' '}
+                <strong>24, 25, 26 y 27 de noviembre</strong>
               </h3>
             </div>
           </div>
-          {!sent && (
+          {sent && (
             <div className="shadow-md mt-5 md:col-span-2 md:mt-0">
               <form onSubmit={handleSubmit}>
                 <div className="overflow-hidden shadow sm:rounded-md">
@@ -619,8 +619,8 @@ export default function LoginPage() {
               </form>
             </div>
           )}
-          {sent && (
-            <div className="h-full">
+          {!sent && (
+            <div className=" mt-5 md:grid-col-3 md:mt-0">
               <section className=" py-10 w-100 m-auto h-screen flex-col align-center justify-start flex">
                 <Image
                   src="/assets/images/congreso.png"
@@ -630,7 +630,7 @@ export default function LoginPage() {
                   className="object-cover object-center"
                 />
 
-                <div className="container mx-auto px-6 flex flex-col justify-center items-center">
+                <div className="container align-middle  flex flex-col justify-center items-center">
                   <h1 className="text-2xl text-center text-[#FF1EC7] font-semibold mt-4 mb-8">
                     No olvides tenemos una cita los proximos <br />
                     24, 25, 26 y 27 de noviembre 2022.
