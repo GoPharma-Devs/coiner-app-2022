@@ -37,12 +37,15 @@ export default async function handler(req, res) {
           subject: `Acceso a Coiner 2020`,
           text: `Su pasword es: ${req.body.password} | Su usuario es: ${req.body.email}`,
           html: `
-          <h1>Acceso a Coiner<sup>®</sup> 2022</h1>
-          <h2>24,25,26 y 27 de noviembre 2022</h2>
-          <p>Estimad@:${req.body.name} ${req.body.lastName}</p>
-          <p>Su usuario es: ${req.body.email} y Su pasword es: ${req.body.password} </p>
+          <div style="background-color: #f5f5f5; padding: 20px; text-align:center !important"; color:#0C4E8B !important; line-height:1;>
+          <h1 >Acceso Coiner<sup>®</sup> 2022</h1>
+          <h2>24, 25, 26 y 27 de noviembre 2022</h2>
+          <p>Estimad@:${req.body.name} ${req.body.lastName} su acceso es el siguiente:</p>
+          <p>Usuario: ${req.body.email} <br> Password: ${req.body.password} </p>
           <p>Para ingresar a la plataforma de Coiner 2022, ingrese a la siguiente dirección: <a href="https://coiner.org/congreso">https://coiner.org/congreso</a></p>
           <p>Gracias por registrarse al CONGRESO INTERNACIONAL DE ENFERMEDADES RARAS 2022</p>
+
+            </div>
           
           `,
         };
