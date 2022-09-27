@@ -21,7 +21,7 @@ const Gracias = () => (
 
       <div className="container mx-auto px-6 flex flex-col justify-center items-center">
         <h1 className="text-2xl text-center text-[#FF1EC7] font-semibold mt-4 mb-8">
-          No olvides tenemos una cita los proximos <br />
+          No olvides tenemos una cita los próximos <br />
           24, 25, 26 y 27 de noviembre 2022.
         </h1>
 

@@ -157,7 +157,7 @@ export default function LoginPage() {
                         >
                           <option value="default">Selecciona tu país</option>
 
-                          <option value="Mexico">Mexico</option>
+                          <option value="México">México</option>
                           <option value="United States of America">
                             United States of America
                           </option>
@@ -337,7 +337,6 @@ export default function LoginPage() {
                           <option value="Mauritania">Mauritania</option>
                           <option value="Mauritius">Mauritius</option>
                           <option value="Mayotte">Mayotte</option>
-                          <option value="Mexico">Mexico</option>
                           <option value="Micronesia, Federated States of">
                             Micronesia, Federated States of
                           </option>
@@ -632,7 +631,7 @@ export default function LoginPage() {
 
                 <div className="container align-middle  flex flex-col justify-center items-center">
                   <h1 className="text-2xl text-center text-[#FF1EC7] font-semibold mt-4 mb-8">
-                    No olvides tenemos una cita los proximos <br />
+                    No olvides tenemos una cita los próximos <br />
                     24, 25, 26 y 27 de noviembre 2022.
                   </h1>
 
