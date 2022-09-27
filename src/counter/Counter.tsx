@@ -8,7 +8,7 @@ function Counter() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const target = new Date('Nov 24, 2022 00:00:00').getTime();
+      const target = new Date('Nov 24, 2022 19:00:00').getTime();
       const now = new Date().getTime();
       const difference = target - now;
 
