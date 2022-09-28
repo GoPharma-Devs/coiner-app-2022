@@ -1,16 +1,34 @@
+import { useState } from 'react';
+
 import { LockClosedIcon } from '@heroicons/react/20/solid';
 
 export default function LoginPage() {
+  const [credentials, setCredentials] = useState({
+    email: '',
+    password: '',
+  });
+
+  const handleChange = (e: any) => {
+    setCredentials({
+      ...credentials,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log(credentials);
+    fetch('http://localhost:3000/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(credentials),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+  };
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-50">
-        <body class="h-full">
-        ```
-      */}
       <div className="flex min-h-[75vh] items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
@@ -20,24 +38,30 @@ export default function LoginPage() {
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-[#0C4E8B]">
-              Iniciar sesión
+              Accede al congreso
             </h2>
           </div>
-          <form className="mt-8 space-y-6" action="#" method="POST">
+          <form
+            onSubmit={handleSubmit}
+            className="mt-8 space-y-6"
+            action="#"
+            method="POST"
+          >
             <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
                 <label htmlFor="email-address" className="sr-only">
-                  Email address
+                  Correo electrónico
                 </label>
                 <input
+                  onChange={handleChange}
                   id="email-address"
                   name="email"
                   type="email"
                   autoComplete="email"
                   required
                   className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-[#0C4E8B] focus:outline-none focus:ring-[#137de0] sm:text-sm"
-                  placeholder="Email address"
+                  placeholder="Correo electrónico"
                 />
               </div>
               <div>
@@ -45,6 +69,7 @@ export default function LoginPage() {
                   Password
                 </label>
                 <input
+                  onChange={handleChange}
                   id="password"
                   name="password"
                   type="password"
@@ -53,32 +78,6 @@ export default function LoginPage() {
                   className="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-[#0C4E8B] focus:outline-none focus:ring-[#0C4E8B] sm:text-sm"
                   placeholder="Password"
                 />
-              </div>
-            </div>
-
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <input
-                  id="remember-me"
-                  name="remember-me"
-                  type="checkbox"
-                  className="h-4 w-4 rounded border-gray-300 text-[#0C4E8B] focus:ring-[#0C4E8B]"
-                />
-                <label
-                  htmlFor="remember-me"
-                  className="ml-2 block text-sm text-gray-900"
-                >
-                  Remember me
-                </label>
-              </div>
-
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="font-medium text-[#0C4E8B] hover:text-indigo-500"
-                >
-                  Forgot your password?
-                </a>
               </div>
             </div>
 

@@ -569,7 +569,7 @@ export default function LoginPage() {
                         <input
                           required
                           onChange={handleChange}
-                          minLength={8}
+                          minLength={6}
                           type="text"
                           name="enrollment"
                           id="enrollment"
