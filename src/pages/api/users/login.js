@@ -1,33 +1,15 @@
-import { sign } from 'jsonwebtoken';
-import { serialize } from 'cookie';
+import User from 'model/users';
+import { dbConnect } from 'utils/db';
 
-export default function loginHandler(req, res) {
+require('dotenv').config();
+
+dbConnect();
+
+export default async function handler(req, res) {
   const { email, password } = req.body;
-
-  if (email === 'admin@local.local' && password === 'admin') {
-    // expire in 30 days
-    const token = sign(
-      {
-        exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 30,
-        email,
-        username: 'fazt',
-      },
-      'secret'
-    );
-
-    const serialized = serialize('myTokenName', token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'strict',
-      maxAge: 1000 * 60 * 60 * 24 * 30,
-      path: '/',
-    });
-
-    res.setHeader('Set-Cookie', serialized);
-    return res.status(200).json({
-      message: 'Login successful',
-    });
+  const user = await User.findOne({ email, password });
+  if (!user) {
+    return res.status(400).json({ msg: 'Usuario o contraseña incorrectos' });
   }
-
-  return res.status(401).json({ error: 'Invalid credentials' });
+  return res.status(200).json({ msg: 'Usuario logueado' });
 }

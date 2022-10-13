@@ -17,14 +17,24 @@ export default function LoginPage() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(credentials);
-    fetch('http://localhost:3000/api/login', {
+
+    fetch('/api/users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(credentials),
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.ok) {
+          res.json();
+          window.location.href = 'https://congreso.coiner.org/';
+        } else {
+          res.json().then((data) => {
+            console.log(data);
+          });
+        }
+      })
       .then((data) => console.log(data));
   };
   return (
