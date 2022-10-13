@@ -22,9 +22,11 @@ function ConstanciaView({ contancia }) {
         <br />
         <br />
         <p>Apreciable</p>
+        <br />
         <h1 className="mx-auto max-w-2xl text-center content-center	 font-display text-4xl font-medium tracking-tighter text-[#0c4e8b] sm:text-4xl">
           {contancia.name}
         </h1>
+        <br />
         <p>
           Agradecemos su participación en el Congreso Internacional de
           Enfermedades Raras realizado los días:
