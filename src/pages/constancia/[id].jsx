@@ -20,7 +20,7 @@ function ConstanciaView({ contancia }) {
 export default ConstanciaView;
 
 export const getServerSideProps = async (ctx) => {
-  const res = await fetch(`http://localhost:3000/api/users/${ctx.query.id}`);
+  const res = await fetch(`https://coiner.org/api/users/${ctx.query.id}`);
   const contancia = await res.json();
 
   return {
