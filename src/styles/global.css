@@ -82,13 +82,12 @@ body:before {
   opacity: 1;
 }
 
-.navbar-footer{
-  background:transparent !important;
-
+.navbar-footer {
+  background: transparent !important;
 }
 
-.navbar-footer li{
-  margin:0 0.5rem;
+.navbar-footer li {
+  margin: 0 0.5rem;
 }
 .boton {
   background: rgb(12 78 139);
@@ -124,7 +123,7 @@ body:before {
   cursor: pointer;
 }
 
-input{
+input {
   border-radius: 8px;
   border: 1px solid #0c4e8b;
   padding: 0.5rem;
@@ -134,41 +133,65 @@ input{
 }
 
 .contenedor-aviso {
-	 padding: 1rem;
-	 text-align: left;
-	 max-width: 1080px;
+  padding: 1rem;
+  text-align: left;
+  max-width: 1080px;
 }
- .contenedor-aviso h1, .contenedor-aviso h2 {
-	 text-align: center;
+.contenedor-aviso h1,
+.contenedor-aviso h2 {
+  text-align: center;
 }
- .contenedor-aviso p {
-	 margin-top: 1rem !important;
-	 text-align: justify !important;
-	 color: #0C4E8B !important;
+.contenedor-aviso p {
+  margin-top: 1rem !important;
+  text-align: justify !important;
+  color: #0c4e8b !important;
 }
- .contenedor-aviso ol.k {
-	 list-style-type: lower-alpha !important;
+.contenedor-aviso ol.k {
+  list-style-type: lower-alpha !important;
 }
- .contenedor-aviso .titulo {
-	 text-align: left;
-	 font-weight: bold;
+.contenedor-aviso .titulo {
+  text-align: left;
+  font-weight: bold;
 }
- .contenedor-aviso p.final {
-	 text-align: right !important;
+.contenedor-aviso p.final {
+  text-align: right !important;
 }
- .contenedor-aviso strong {
-	 font-weight: bold !important;
+.contenedor-aviso strong {
+  font-weight: bold !important;
 }
 
-.contenedor-aviso ol,ul {
-padding-left: 2rem;
-margin-top: 1rem;
-margin-bottom: 1rem;
-	 
+.contenedor-aviso ol,
+ul {
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
- 
- a{
- margin: 0 0 0  0.3rem;
- font-weight: bold;
- 
- }
+
+a {
+  margin: 0 0 0 0.3rem;
+  font-weight: bold;
+}
+
+.constancia {
+  margin-top: 1rem;
+  text-align: center;
+}
+.constancia p {
+  margin: 0;
+  font-size: 1.4rem;
+  max-width: 640px;
+font-weight: lighter !important;
+  margin: 0 auto;
+}
+
+.constancia h2 {
+  font-size: 1.4rem;
+  max-width: 640px;
+
+  margin: 0 auto;
+}
+
+.contancia img{
+  margin-top: 1rem;
+  text-align: center;
+}
