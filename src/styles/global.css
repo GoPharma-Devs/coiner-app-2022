@@ -191,3 +191,25 @@ font-weight: lighter !important;
   margin: 0 auto;
 }
 
+
+.constancia h1 {
+ border-bottom: 1px solid #0c4e8b;
+  padding: 0.5rem;
+  color: #0c4e8b;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.botonImp{
+  background: #0c4e8b;
+  padding: 0.5rem;
+  position: absolute;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  top: 0;
+  margin-left: 1rem;
+}

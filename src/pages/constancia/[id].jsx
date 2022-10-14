@@ -1,9 +1,13 @@
-import React from 'react';
-
+import React, { useRef } from 'react';
+import { useReactToPrint } from 'react-to-print';
 import Head from 'next/head';
 import Image from 'next/image';
 
 function ConstanciaView({ contancia }) {
+  const componentRef = useRef();
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
   return (
     <>
       <Head>
@@ -11,7 +15,10 @@ function ConstanciaView({ contancia }) {
         <meta name="description" content="Constancia Congreso Coiner" />
       </Head>
 
-      <header className=" header constancia h-screen flex flex-col text-center align-middle place-content-center p-4">
+      <header
+        ref={componentRef}
+        className=" header constancia h-screen flex flex-col text-center align-middle place-content-center p-4"
+      >
         <Image
           src="/assets/images/congreso.png"
           alt="hero"
@@ -24,8 +31,9 @@ function ConstanciaView({ contancia }) {
         <p>Apreciable</p>
         <br />
         <h1 className="mx-auto max-w-2xl text-center content-center	 font-display text-4xl font-medium tracking-tighter text-[#0c4e8b] sm:text-4xl">
-          {contancia.name}
+          {contancia.name} {contancia.lastName}
         </h1>
+
         <br />
         <p>
           Agradecemos su participación en el Congreso Internacional de
@@ -57,6 +65,9 @@ function ConstanciaView({ contancia }) {
           height={80}
         />
       </header>
+      <button className="botonImp" onClick={handlePrint}>
+        Imprime tu certificado
+      </button>
     </>
   );
 }
