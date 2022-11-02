@@ -17,14 +17,13 @@ function ConstanciaView({ contancia }) {
 
       <header
         ref={componentRef}
-        className=" header constancia h-screen flex flex-col text-center align-middle place-content-center p-4"
+        className=" headerc constancia h-screen flex flex-col text-center align-middle place-content-center p-4"
       >
         <Image
           src="/assets/images/congreso.png"
           alt="hero"
-          width={1280}
-          height={234}
-          className=" object-center"
+          width={666}
+          height={125}
         />
         <br />
         <br />
@@ -58,11 +57,11 @@ function ConstanciaView({ contancia }) {
         </p>
         <br />
         <Image
-          className="m-2  w-auto sm:h-10"
+          className=""
           src="/assets/images/logo.svg"
           alt=""
-          width={80}
-          height={80}
+          width={180}
+          height={180}
         />
       </header>
       <button className="botonImp" onClick={handlePrint}>
