@@ -59,8 +59,34 @@ const Base = () => (
           </div>
           <div className="flex items-center justify-center">
             <img
+              alt="PTC LABORATORIES"
+              src="https://firebasestorage.googleapis.com/v0/b/coiner-2022.appspot.com/o/ptc%202.png?alt=media&token=54533fd6-7585-4ca6-9cc1-0b6a347889fe"
+              width={127}
+              height={48}
+              decoding="async"
+              data-nimg="future"
+              loading="lazy"
+              style={{ color: 'transparent' }}
+            />
+          </div>
+
+          <div className="flex items-center justify-center">
+            <img
               alt="Recordatti"
               src="https://firebasestorage.googleapis.com/v0/b/comite-coiner.appspot.com/o/Patrocinadores%2Frecordati.png?alt=media&token=d133cc82-2957-4188-a49f-3c1b21554265"
+              width={138}
+              height={48}
+              decoding="async"
+              data-nimg="future"
+              loading="lazy"
+              style={{ color: 'transparent' }}
+            />
+          </div>
+
+          <div className="flex items-center justify-center">
+            <img
+              alt="Takeda"
+              src="https://firebasestorage.googleapis.com/v0/b/coiner-2022.appspot.com/o/Takeda.png?alt=media&token=bfe70710-d7f2-40d1-8125-b2793583c2f9"
               width={138}
               height={48}
               decoding="async"
