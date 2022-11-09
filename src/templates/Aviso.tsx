@@ -329,7 +329,7 @@ const Aviso = () => (
           <a href="mailto:comunicacion@coiner.org">comunicacion@coiner.org</a>.
         </p>
         <p className="titulo final">
-          Última actualización: 09 de noviembre de 2021
+          Última actualización: 09 de noviembre de 2022
         </p>
       </div>
 
