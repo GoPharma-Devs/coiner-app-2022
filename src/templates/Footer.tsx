@@ -68,6 +68,11 @@ const Footer = () => (
             <a>Contacto</a>
           </Link>
         </li>
+        <li>
+          <Link href="/aviso">
+            <a>Aviso de privacidad</a>
+          </Link>
+        </li>
       </CenteredFooter>
     </Section>
   </Background>
