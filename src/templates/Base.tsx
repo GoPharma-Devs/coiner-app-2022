@@ -1,3 +1,5 @@
+// import Agenda from 'components/Agenda';
+
 import Counter from '../counter/Counter';
 import { Meta } from '../layout/Meta';
 import Navbar from '../navbar/Navbar';
@@ -155,6 +157,9 @@ const Base = () => (
         </div>
       </div>
     </section>
+    {/* <section className="agenda">
+      <Agenda />
+    </section> */}
     <Banner />
     <Footer />
   </div>

@@ -136,6 +136,8 @@ input {
   padding: 1rem;
   text-align: left;
   max-width: 1080px;
+  width: 100%;
+  
 }
 .contenedor-aviso h1,
 .contenedor-aviso h2 {

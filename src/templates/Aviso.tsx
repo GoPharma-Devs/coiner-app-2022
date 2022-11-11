@@ -11,7 +11,7 @@ const Aviso = () => (
     <Navbar />
     <div className="Aviso header">
       <br />
-      <div className=" w-3/4 contenedor-aviso">
+      <div className=" w-3/4 contenedor-aviso sm:w-full ">
         <h1 className="text-2xl text-[#0C4E8B] ">AVISO DE PRIVACIDAD </h1>
         <h2>CONGRESOS </h2>
         <br />

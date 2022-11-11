@@ -18,7 +18,7 @@ const Hero = () => (
         button={
           <Link href="/registro">
             <a>
-              <Button xl>Registro</Button>
+              <Button>Registro</Button>
             </a>
           </Link>
         }
