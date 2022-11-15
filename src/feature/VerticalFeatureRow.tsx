@@ -10,11 +10,12 @@ type IVerticalFeatureRowProps = {
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'mt-2',
-    'flex',
-    'flex-wrap',
-    'items-center',
-    'p-3',
+    'max-w-3xl',
+    'mx-auto',
+    'px-4',
+    'text-center',
+    'text-gray-500',
+    'dark:text-gray-300',
     {
       'flex-row-reverse': props.reverse,
     }
@@ -26,9 +27,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
         <h3 className="text-3xl text-[#0c4e8b] text-center  font-semibold">
           {props.title}
         </h3>
-        <div className="mt-6 text-xl  leading-9 text-center">
-          {props.description}
-        </div>
+        <div>{props.description}</div>
       </div>
     </div>
   );

@@ -1,5 +1,8 @@
 // import Agenda from 'components/Agenda';
 
+// import Agenda from 'components/Agenda';
+// import Comite from 'components/Comite';
+
 import Counter from '../counter/Counter';
 import { Meta } from '../layout/Meta';
 import Navbar from '../navbar/Navbar';
@@ -9,14 +12,17 @@ import { Footer } from './Footer';
 import { Hero } from './Hero';
 import { VerticalFeatures } from './VerticalFeatures';
 // import { VerticalFeatures } from './VerticalFeatures';
-
 const Base = () => (
   <div className="antialiased text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar />
     <Hero />
     <Counter />
+    <br />
+
     <VerticalFeatures />
+    {/* <Comite />
+    <Agenda /> */}
     <section id="sponsors" aria-label="Sponsors" className="py-1 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <img

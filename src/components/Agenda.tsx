@@ -33,14 +33,26 @@ function Agenda() {
   ];
   return (
     <Tabs value="html" className="w-3/4 mx-auto ">
-      <h3 className="text-3xl text-[#0c4e8b] text-center  bg-[#b7ddff]font-semibold">
-        Nuestro horario
-      </h3>
+      <img
+        alt="Nadie es menos"
+        src="/adn-h.png"
+        width={227}
+        height={68}
+        className="mx-auto mb-8"
+        decoding="async"
+        data-nimg="future"
+        loading="lazy"
+        style={{ color: 'transparent' }}
+      />
+      <h2 className="mx-auto max-w-lg text-center font-display text-4xl font-medium tracking-tighter bg-[#1d98dc] text-white rounded-3xl  sm:text-4xl uppercase">
+        Conoce la agenda
+      </h2>
+      <br />
       <TabsHeader className=" font-bold">
         {data.map(({ label, dates, value }) => (
-          <Tab key={value} value={value} className=" py-4">
+          <Tab key={value} value={value} className=" py-6 leading-6 ">
             <p className="text-[#1d98dc] font-bold text-2xl	 "> {label}</p>
-            <small>{dates}</small>
+            <small className="text-[#ff1ec7] text-sm	 ">{dates}</small>
           </Tab>
         ))}
       </TabsHeader>
