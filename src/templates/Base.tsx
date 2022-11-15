@@ -19,6 +19,17 @@ const Base = () => (
     <VerticalFeatures />
     <section id="sponsors" aria-label="Sponsors" className="py-1 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <img
+          alt="Nadie es menos"
+          src="/adn-h.png"
+          width={227}
+          height={68}
+          className="mx-auto mb-8"
+          decoding="async"
+          data-nimg="future"
+          loading="lazy"
+          style={{ color: 'transparent' }}
+        />
         <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-[#0c4e8b] sm:text-4xl">
           Nuestros Patrocinadores
         </h2>
@@ -113,6 +124,17 @@ const Base = () => (
       </div>
     </section>
     <section id="partners" aria-label="partners" className="py-1 ">
+      <img
+        alt="Nadie es menos"
+        src="/adn-h.png"
+        width={227}
+        height={68}
+        className="mx-auto mb-8"
+        decoding="async"
+        data-nimg="future"
+        loading="lazy"
+        style={{ color: 'transparent' }}
+      />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-[#0c4e8b] sm:text-4xl">
           Nuestros Aliados

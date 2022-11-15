@@ -58,11 +58,7 @@ const Footer = () => (
             <a>Registro</a>
           </Link>
         </li>
-        <li>
-          <Link href="/">
-            <a>Nosotros</a>
-          </Link>
-        </li>
+
         <li>
           <Link href="/contacto">
             <a>Contacto</a>
