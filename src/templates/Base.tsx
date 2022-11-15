@@ -26,7 +26,7 @@ const Base = () => (
     <section id="sponsors" aria-label="Sponsors" className="py-1 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <img
-          alt="Nadie es menos"
+          alt="Coiner"
           src="/adn-h.png"
           width={227}
           height={68}
