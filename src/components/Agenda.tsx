@@ -55,7 +55,7 @@ function Agenda() {
         Conoce la agenda de <br /> coiner<sup>®</sup> 2022
       </h2>
       <br />
-      <TabsHeader className=" font-bold bg-[#a9d9f310]">
+      <TabsHeader className=" font-bold bg-[#a9d9f310] flex sm:flex-row  lg:flex-row ">
         {data.map(({ label, dates, value }) => (
           <Tab
             key={value}
