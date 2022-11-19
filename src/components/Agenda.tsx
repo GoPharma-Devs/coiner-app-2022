@@ -38,7 +38,7 @@ function Agenda() {
     },
   ];
   return (
-    <Tabs value="html" className="w-3/4 mx-auto ">
+    <Tabs value="html" className="w-3/4 mx-auto  ">
       <img
         id="agenda"
         alt="Nadie es menos"
@@ -55,9 +55,13 @@ function Agenda() {
         Conoce la agenda de <br /> coiner<sup>®</sup> 2022
       </h2>
       <br />
-      <TabsHeader className=" font-bold">
+      <TabsHeader className=" font-bold bg-[#a9d9f310]">
         {data.map(({ label, dates, value }) => (
-          <Tab key={value} value={value} className=" py-6 leading-6 ">
+          <Tab
+            key={value}
+            value={value}
+            className=" py-6 leading-6 bg-[#aedef873] rounded-3xl  m-2 text-[#0d0d0d] hover:bg-[#7eff2d] hover:text-white"
+          >
             <p className="text-[#1d98dc] font-bold text-2xl	 "> {label}</p>
             <small className="text-[#ff1ec7] text-sm	 ">{dates}</small>
           </Tab>
