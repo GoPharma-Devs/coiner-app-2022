@@ -1,4 +1,4 @@
-// import Agenda from 'components/Agenda';
+import Agenda from 'components/Agenda';
 import Comite from 'components/Comite';
 
 import Counter from '../counter/Counter';
@@ -20,7 +20,7 @@ const Base = () => (
 
     <VerticalFeatures />
     <Comite />
-    {/* <Agenda /> */}
+    <Agenda />
     <section id="sponsors" aria-label="Sponsors" className="py-1 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <img

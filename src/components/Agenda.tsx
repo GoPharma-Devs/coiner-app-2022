@@ -12,28 +12,35 @@ function Agenda() {
   const data = [
     {
       label: 'Día 1',
-      dates: '25 de noviembre 2022',
-      value: 'vue',
-      desc: `/assets/images/feature.svg`,
+      dates: '24 de noviembre 2022',
+      value: '24 de noviembre 2022',
+      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-01.png?alt=media&token=0fcd4c51-8776-48ec-867a-8811e2438798`,
     },
 
     {
       label: 'Día 2',
-      dates: '26 de noviembre 2022',
-      value: 'angular',
-      desc: `/assets/images/feature2.svg`,
+      dates: '25 de noviembre 2022',
+      value: '25 de noviembre 2022',
+      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-02.png?alt=media&token=27aaf9b5-fe0f-4f56-b6ca-8e6a83188b50`,
     },
 
     {
       label: 'Día 3',
+      dates: '26 de noviembre 2022',
+      value: '26 de noviembre 2022',
+      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-03.png?alt=media&token=12edca7d-aa14-40e4-a16c-ca79cef1c24c`,
+    },
+    {
+      label: 'Día 4',
       dates: '27 de noviembre 2022',
-      value: 'svelte',
-      desc: `/assets/images/feature3.svg`,
+      value: '27 de noviembre 2022',
+      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-04.png?alt=media&token=c51c3f7b-6805-403d-9c3f-af715a9ebaef`,
     },
   ];
   return (
     <Tabs value="html" className="w-3/4 mx-auto ">
       <img
+        id="agenda"
         alt="Nadie es menos"
         src="/adn-h.png"
         width={227}
@@ -44,8 +51,8 @@ function Agenda() {
         loading="lazy"
         style={{ color: 'transparent' }}
       />
-      <h2 className="mx-auto max-w-lg text-center font-display text-4xl font-medium tracking-tighter bg-[#1d98dc] text-white rounded-3xl  sm:text-4xl uppercase">
-        Conoce la agenda
+      <h2 className="mx-auto max-w-lg text-center font-display text-4xl font-medium tracking-tighter bg-[#7eff2d] text-white rounded-3xl  sm:text-4xl uppercase">
+        Conoce la agenda de <br /> coiner<sup>®</sup> 2022
       </h2>
       <br />
       <TabsHeader className=" font-bold">
@@ -59,7 +66,7 @@ function Agenda() {
       <TabsBody>
         {data.map(({ value, desc }) => (
           <TabPanel key={value} value={value}>
-            <img alt="desc" src={desc}></img>
+            <img alt="desc" className="agenda" src={desc}></img>
           </TabPanel>
         ))}
       </TabsBody>
