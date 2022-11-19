@@ -14,27 +14,27 @@ function Agenda() {
       label: 'Día 1',
       dates: '24 de noviembre 2022',
       value: '24 de noviembre 2022',
-      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-01.png?alt=media&token=0fcd4c51-8776-48ec-867a-8811e2438798`,
+      desc: `/assets/images/AGENDA-02.png`,
     },
 
     {
       label: 'Día 2',
       dates: '25 de noviembre 2022',
       value: '25 de noviembre 2022',
-      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-02.png?alt=media&token=27aaf9b5-fe0f-4f56-b6ca-8e6a83188b50`,
+      desc: `/assets/images/AGENDA-03.png`,
     },
 
     {
       label: 'Día 3',
       dates: '26 de noviembre 2022',
       value: '26 de noviembre 2022',
-      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-03.png?alt=media&token=12edca7d-aa14-40e4-a16c-ca79cef1c24c`,
+      desc: `/assets/images/AGENDA-04.png`,
     },
     {
       label: 'Día 4',
       dates: '27 de noviembre 2022',
       value: '27 de noviembre 2022',
-      desc: `https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/agenda%2FAGENDA-04.png?alt=media&token=c51c3f7b-6805-403d-9c3f-af715a9ebaef`,
+      desc: `/assets/images/AGENDA-01.png`,
     },
   ];
   return (
