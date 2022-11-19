@@ -14,27 +14,27 @@ function Agenda() {
       label: 'Día 1',
       dates: '24 de noviembre 2022',
       value: '24 de noviembre 2022',
-      desc: `/assets/images/AGENDA-02.png`,
+      desc: `/assets/images/AGENDA-01.png`,
     },
 
     {
       label: 'Día 2',
       dates: '25 de noviembre 2022',
       value: '25 de noviembre 2022',
-      desc: `/assets/images/AGENDA-03.png`,
+      desc: `/assets/images/AGENDA-02.png`,
     },
 
     {
       label: 'Día 3',
       dates: '26 de noviembre 2022',
       value: '26 de noviembre 2022',
-      desc: `/assets/images/AGENDA-04.png`,
+      desc: `/assets/images/AGENDA-03.png`,
     },
     {
       label: 'Día 4',
       dates: '27 de noviembre 2022',
       value: '27 de noviembre 2022',
-      desc: `/assets/images/AGENDA-01.png`,
+      desc: `/assets/images/AGENDA-04.png`,
     },
   ];
   return (
