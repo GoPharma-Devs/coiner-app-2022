@@ -115,7 +115,7 @@ const Base = () => (
           <div className="flex items-center justify-center">
             <img
               alt="Ultragenyx"
-              src="https://firebasestorage.googleapis.com/v0/b/comite-coiner.appspot.com/o/Patrocinadores%2F8.png?alt=media&token=9888717c-8c0c-4eb0-a1fb-51d69266ea62"
+              src="https://firebasestorage.googleapis.com/v0/b/coiner-2022.appspot.com/o/ug.png?alt=media&token=00639d2d-8114-4682-838f-62457438b037"
               width={136}
               height={48}
               decoding="async"
