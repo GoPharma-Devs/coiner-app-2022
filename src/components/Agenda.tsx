@@ -21,7 +21,7 @@ function Agenda() {
       label: 'Día 2',
       dates: '25 de noviembre 2022',
       value: '25 de noviembre 2022',
-      desc: `/AGENDA-25.png`,
+      desc: `/assets/images/AGENDA-25.png`,
     },
 
     {
