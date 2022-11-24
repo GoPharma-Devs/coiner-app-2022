@@ -34,10 +34,10 @@ function ComiteA() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dr. Ronny Kershenovich"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
+              <p className="nombre">Dr. Ronny Kershenovich</p>
               <p className="titulo-ponente">
                 Presidente Comité Científico COINER® 2022 Genética Médica
               </p>
@@ -64,25 +64,30 @@ function ComiteA() {
     );
   }
   return (
-    <React.Fragment>
+    <>
       {' '}
-      <div
-        onClick={() => setModalShow(true)}
-        className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-white rounded-xl"
-      >
-        <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
-        <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
-        </h3>
-        <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
-        </p>
+      <div className="flex flex-wrap place-content-center  items-center p-8 transition-colors duration-200 transform cursor-pointer group s,sm:flex-col-reverse ">
+        <img
+          className="object-cover w-42 h-52 m-4 "
+          src={ImgPonente}
+          alt="Dr. Ronny Kershenovich Coiner 2022"
+        />
+        <div className="flex flex-col ">
+          <span className="bg-[#0c4e8b] rounded-[4rem] px-[3rem] py-2 pb-5 ml-4 ">
+            <h3 className=" mt-4 text-3xl text-center font-semibold text-[#1ed4ff] capitalize dark:text-white ">
+              Dr. Ronny Kershenovich
+            </h3>
+            <p className="mt-2 text-[white] text-center capitalize dark:text-gray-300  max-w-xs	">
+              Presidente Comité Científico COINER® 2022 Genética Médica
+            </p>
+          </span>
+        </div>
       </div>
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-    </React.Fragment>
+    </>
   );
 }
 
