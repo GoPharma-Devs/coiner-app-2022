@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
-interface ComiteBProps {
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FAraceli_Arellano.png?alt=media&token=130442f3-2a96-40d8-9d82-1bb4f1ec8552';
+interface ComiteCProps {
   nombre?: string;
   titulo?: string;
   trayectoria?: string;
@@ -13,9 +13,9 @@ interface ComiteBProps {
   show?: boolean;
 }
 
-function ComiteB() {
+function ComiteC() {
   const [modalShow, setModalShow] = useState(false);
-  function MyVerticallyCenteredModal(props: ComiteBProps) {
+  function MyVerticallyCenteredModal(props: ComiteCProps) {
     return (
       <Modal
         className="text-light"
@@ -34,18 +34,14 @@ function ComiteB() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dra. Araceli Arellano"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
-              <p className="titulo-ponente">Presidente OMER Y JAJAX </p>
+              <p className="nombre">Dra. Araceli Arellano</p>
+              <p className="titulo-ponente">Reumatología Pediátrica </p>
               <p className="trayectoria text-cyan-900">
-                Es fundador y actual Vice-Presidente de la Alianza
-                Iberoamericana de las Enfermedades Raras o Poco Frecuentes
-                (ALIBER), Fundador y Presidente de la Organización Mexicana de
-                Enfermedades Raras (OMER) y de MPS JAJAX AC. Miembro del panel
-                de expertos de enfermedades raras para Rare Diseases
-                International.{' '}
+                Miembro de board de centros de referencia del proyecto global de
+                la OMS Y OMS{' '}
               </p>
             </div>
           </div>
@@ -62,7 +58,7 @@ function ComiteB() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dra. Araceli Arellano
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
           Presidente OMER Y JAJAX
@@ -76,4 +72,4 @@ function ComiteB() {
   );
 }
 
-export default ComiteB;
+export default ComiteC;

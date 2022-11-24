@@ -5,7 +5,7 @@ import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
   'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
-interface ComiteBProps {
+interface ComiteOProps {
   nombre?: string;
   titulo?: string;
   trayectoria?: string;
@@ -13,9 +13,9 @@ interface ComiteBProps {
   show?: boolean;
 }
 
-function ComiteB() {
+function ComiteO() {
   const [modalShow, setModalShow] = useState(false);
-  function MyVerticallyCenteredModal(props: ComiteBProps) {
+  function MyVerticallyCenteredModal(props: ComiteOProps) {
     return (
       <Modal
         className="text-light"
@@ -38,14 +38,24 @@ function ComiteB() {
             />
             <div className="texto">
               <p className="nombre">Dr. Jesús Navarro</p>
-              <p className="titulo-ponente">Presidente OMER Y JAJAX </p>
+              <p className="titulo-ponente">
+                Presidente Comité Científico COINER® 2022 Genética Médica
+              </p>
               <p className="trayectoria text-cyan-900">
-                Es fundador y actual Vice-Presidente de la Alianza
-                Iberoamericana de las Enfermedades Raras o Poco Frecuentes
-                (ALIBER), Fundador y Presidente de la Organización Mexicana de
-                Enfermedades Raras (OMER) y de MPS JAJAX AC. Miembro del panel
-                de expertos de enfermedades raras para Rare Diseases
-                International.{' '}
+                Médico genetista desde el 2003 con especial interés en
+                dismofología clínica, enfermedades del tejido conectivo y
+                porfirias. Actualmente es Subdirector de Investigación Médica en
+                el Instituto Nacional de Medicina Genómica, médico genetista en
+                Centro Médico ABC Campus Santa Fé y profesor de pregrado en la
+                universidad Anáhuac de norte en la facultad de medicina. Miembro
+                activo de diversas asociaciones nacionales e internacionales
+                como: Asociación Mexicana de Genética Humana, Capitulo de
+                Genética del Colegio Mexicano de Ginecología y Obstetricia,
+                American Porphyria Foundation, American College of Medical
+                Genetics and Genomics, American Society of Human Genetics,
+                European Society of Human Genetics. Miembro de la Asociación
+                Médica y del Staff del Centro Médico ABC, Sociedad Mexicana para
+                Porifira, Unique y The Ehlers-Danlos Society.
               </p>
             </div>
           </div>
@@ -76,4 +86,4 @@ function ComiteB() {
   );
 }
 
-export default ComiteB;
+export default ComiteO;
