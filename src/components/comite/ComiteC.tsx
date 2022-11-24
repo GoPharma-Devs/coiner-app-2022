@@ -61,7 +61,7 @@ function ComiteC() {
           Dra. Araceli Arellano
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Reumatología Pediátrica
         </p>
       </div>
       <MyVerticallyCenteredModal

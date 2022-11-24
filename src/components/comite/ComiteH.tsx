@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FEsther_Lieberman.png?alt=media&token=8982e40c-00f5-4a69-a672-ba4d233ddf4f';
 interface ComiteHProps {
   nombre?: string;
   titulo?: string;
@@ -34,28 +34,20 @@ function ComiteH() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dra. Esther Lieberman"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
-              <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
-              </p>
+              <p className="nombre">Dra. Esther Lieberman</p>
+              <p className="titulo-ponente">Genética Médica</p>
               <p className="trayectoria text-cyan-900">
-                Médico genetista desde el 2003 con especial interés en
-                dismofología clínica, enfermedades del tejido conectivo y
-                porfirias. Actualmente es Subdirector de Investigación Médica en
-                el Instituto Nacional de Medicina Genómica, médico genetista en
-                Centro Médico ABC Campus Santa Fé y profesor de pregrado en la
-                universidad Anáhuac de norte en la facultad de medicina. Miembro
-                activo de diversas asociaciones nacionales e internacionales
-                como: Asociación Mexicana de Genética Humana, Capitulo de
-                Genética del Colegio Mexicano de Ginecología y Obstetricia,
-                American Porphyria Foundation, American College of Medical
-                Genetics and Genomics, American Society of Human Genetics,
-                European Society of Human Genetics. Miembro de la Asociación
-                Médica y del Staff del Centro Médico ABC, Sociedad Mexicana para
-                Porifira, Unique y The Ehlers-Danlos Society.
+                Médico especialista en Genetica Humana Egresada del Departamento
+                de Genética Humana del Instituto Nacional de Pediatría dónde
+                ejerce como adscrito en dicho Departamento. Áreas de interés:
+                abordaje genético en el asesoramiento en enfermedade raras,
+                enfermedades lisosomales y diferencias en el desarrollo sexual.
+                Profesor asociado de los cursos de Genética, Pediatría y
+                Enfermería Pediatrica en el Insutituto Nacional de Pediatría.
+                Miembro actual del Consejo Mexicano de Genética.{' '}
               </p>
             </div>
           </div>
@@ -72,10 +64,10 @@ function ComiteH() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dra. Esther Lieberman
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Genética Médica
         </p>
       </div>
       <MyVerticallyCenteredModal

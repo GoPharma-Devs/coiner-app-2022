@@ -66,7 +66,10 @@ function ComiteA() {
   return (
     <>
       {' '}
-      <div className="flex flex-wrap place-content-center  items-center p-8 transition-colors duration-200 transform cursor-pointer group s,sm:flex-col-reverse ">
+      <div
+        onClick={() => setModalShow(true)}
+        className="flex flex-wrap place-content-center  items-center p-8 transition-colors duration-200 transform cursor-pointer group s,sm:flex-col-reverse "
+      >
         <img
           className="object-cover w-42 h-52 m-4 "
           src={ImgPonente}

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FElisa_Saleme.png?alt=media&token=db572580-f98b-4cb4-bdea-677e83de6ca7';
 interface ComiteNProps {
   nombre?: string;
   titulo?: string;
@@ -34,28 +34,19 @@ function ComiteN() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dra. Elisa Saleme
+"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
+              <p className="nombre">Dra. Elisa Saleme</p>
               <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
+                Medicina de urgencias - Porfirias
               </p>
               <p className="trayectoria text-cyan-900">
-                Médico genetista desde el 2003 con especial interés en
-                dismofología clínica, enfermedades del tejido conectivo y
-                porfirias. Actualmente es Subdirector de Investigación Médica en
-                el Instituto Nacional de Medicina Genómica, médico genetista en
-                Centro Médico ABC Campus Santa Fé y profesor de pregrado en la
-                universidad Anáhuac de norte en la facultad de medicina. Miembro
-                activo de diversas asociaciones nacionales e internacionales
-                como: Asociación Mexicana de Genética Humana, Capitulo de
-                Genética del Colegio Mexicano de Ginecología y Obstetricia,
-                American Porphyria Foundation, American College of Medical
-                Genetics and Genomics, American Society of Human Genetics,
-                European Society of Human Genetics. Miembro de la Asociación
-                Médica y del Staff del Centro Médico ABC, Sociedad Mexicana para
-                Porifira, Unique y The Ehlers-Danlos Society.
+                Especialista en Medicina de Urg con M. En Salud Publica,
+                actualmente Doctorado en Admon en Alta Dirección y Sistemas de
+                Salud, Jefe de Servicio de Urgencias CM ABC Santa Fe, profesor
+                Titular de la Esp. Medicina de Urgencias y del ITESM
               </p>
             </div>
           </div>
@@ -72,10 +63,10 @@ function ComiteN() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dra. Elisa Saleme
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Medicina de urgencias - Porfirias
         </p>
       </div>
       <MyVerticallyCenteredModal

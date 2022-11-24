@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FIv%C2%A0n_Duncker.png?alt=media&token=9750fe95-fc69-4354-a497-b24080dab01c';
 interface ComiteIProps {
   nombre?: string;
   titulo?: string;
@@ -34,12 +34,13 @@ function ComiteI() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dr. Iván Duncker
+"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
+              <p className="nombre">Dr. Iván Duncker</p>
               <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
+                Doctorado en ciencias (Biología molecular y celular)
               </p>
               <p className="trayectoria text-cyan-900">
                 Médico genetista desde el 2003 con especial interés en
@@ -72,10 +73,10 @@ function ComiteI() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dr. Iván Duncker
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Doctorado en ciencias (Biología molecular y celular)
         </p>
       </div>
       <MyVerticallyCenteredModal

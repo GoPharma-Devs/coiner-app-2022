@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJorge_Palacios.png?alt=media&token=88a53785-90c4-4151-ae1a-0f9fcbf76cc9';
 interface ComiteJProps {
   nombre?: string;
   titulo?: string;
@@ -34,28 +34,30 @@ function ComiteJ() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dr. Jorge Palacios"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
-              <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
-              </p>
+              <p className="nombre">Dr. Jorge Palacios</p>
+              <p className="titulo-ponente">Genética Médica</p>
               <p className="trayectoria text-cyan-900">
-                Médico genetista desde el 2003 con especial interés en
-                dismofología clínica, enfermedades del tejido conectivo y
-                porfirias. Actualmente es Subdirector de Investigación Médica en
-                el Instituto Nacional de Medicina Genómica, médico genetista en
-                Centro Médico ABC Campus Santa Fé y profesor de pregrado en la
-                universidad Anáhuac de norte en la facultad de medicina. Miembro
-                activo de diversas asociaciones nacionales e internacionales
-                como: Asociación Mexicana de Genética Humana, Capitulo de
-                Genética del Colegio Mexicano de Ginecología y Obstetricia,
-                American Porphyria Foundation, American College of Medical
-                Genetics and Genomics, American Society of Human Genetics,
-                European Society of Human Genetics. Miembro de la Asociación
-                Médica y del Staff del Centro Médico ABC, Sociedad Mexicana para
-                Porifira, Unique y The Ehlers-Danlos Society.
+                Estudió la carrera de Medicina en la Universidad Autónoma de
+                Tamaulipas; posteriormente realizó su especialidad en Genética
+                Médica en el Centro Médico Nacional Siglo XXI del IMSS. Realizó
+                su maestría en Ciencias Médicas con respaldo universitario por
+                la UNAM. Actualmente se desempeña como adscrito y coordinador de
+                investigación en Genética Médica de la Clínica de Genética
+                Psiquiátrica y psiquiatría Perinatal del INPRFM; es profesor
+                adjunto del curso de especialización en Psiquiatría impartiendo
+                la materia de Genética; también es profesor adjunto de los
+                cursos de alta especialidad en Biología Molecular, Genética y
+                Psiquiatría y del curso de alta especialidad en Psicogeriatría
+                (Genética de las demencias). Es profesor del curso de Genética
+                Médica en enfermería del Instituto Nacional de Nutrición y
+                profesor de pregrado del área de Ciencias de la Salud del
+                Instituto Tecnológico de Monterrey de las materias de Biología
+                Celular y Genética, así como de neuroendocrinología. Miembro
+                re-certificado del Consejo Mexicano de Genética y miembro
+                Honorario de la Asociación Psiquiátrica Mexicana.
               </p>
             </div>
           </div>
@@ -72,10 +74,10 @@ function ComiteJ() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dr. Jorge Palacios
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Genética Médica
         </p>
       </div>
       <MyVerticallyCenteredModal

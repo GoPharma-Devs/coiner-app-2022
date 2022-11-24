@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FPatricia_Grether.png?alt=media&token=079ed55f-5250-4cbb-86a9-77a89aaf7a97';
 interface ComiteOProps {
   nombre?: string;
   titulo?: string;
@@ -34,28 +34,29 @@ function ComiteO() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dra. Patricia Grether
+"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
-              <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
-              </p>
+              <p className="nombre">Dra. Patricia Grether</p>
+              <p className="titulo-ponente">Genética Médica</p>
               <p className="trayectoria text-cyan-900">
-                Médico genetista desde el 2003 con especial interés en
-                dismofología clínica, enfermedades del tejido conectivo y
-                porfirias. Actualmente es Subdirector de Investigación Médica en
-                el Instituto Nacional de Medicina Genómica, médico genetista en
-                Centro Médico ABC Campus Santa Fé y profesor de pregrado en la
-                universidad Anáhuac de norte en la facultad de medicina. Miembro
-                activo de diversas asociaciones nacionales e internacionales
-                como: Asociación Mexicana de Genética Humana, Capitulo de
-                Genética del Colegio Mexicano de Ginecología y Obstetricia,
-                American Porphyria Foundation, American College of Medical
-                Genetics and Genomics, American Society of Human Genetics,
-                European Society of Human Genetics. Miembro de la Asociación
-                Médica y del Staff del Centro Médico ABC, Sociedad Mexicana para
-                Porifira, Unique y The Ehlers-Danlos Society.
+                Es médica especialista en Genética, egresada de la Facultad de
+                Medicina de la Universidad Nacional Autónoma de México y del
+                Instituto Nacional de Pediatría. Actualmente labora en el Centro
+                Médico ABC. amplió los estudios básicos a través de la
+                implementación de la citogenética y estudios moleculares y
+                genómicos prenatales. convirtiendo al INPer en el primer centro
+                de referencia nacional en el campo del Diagnóstico Prenatal.
+                Fundó y dirigió el laboratorio de genética Diagen SC, (1993 –
+                2020) certificado en calidad por el College of American
+                Pathologists (CAP). Desde 2006, es miembro del Colegio de
+                Bioética AC y tuvo a su cargo la vicepresidencia por 2 años.
+                Tiene 44 trabajos publicados en revistas científicas y 8 en
+                libros de la especialidad. Desde junio del 2020 es Presidente de
+                la Práctica Médica Grupal de Genética del Centro Médico ABC y el
+                1 de julio de 2022 fue nombrada Consejera del Consejo Consultivo
+                de la Comisión Nacional de Bioética.
               </p>
             </div>
           </div>
@@ -72,10 +73,10 @@ function ComiteO() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dra. Patricia Grether
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Genética Médica
         </p>
       </div>
       <MyVerticallyCenteredModal

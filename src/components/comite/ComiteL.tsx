@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FTalia_Wegman.png?alt=media&token=be7c65b9-47d6-494c-a5f9-4669a7e057e1';
 interface ComiteLProps {
   nombre?: string;
   titulo?: string;
@@ -34,28 +34,20 @@ function ComiteL() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dra. Talia Wegman"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
-              <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
-              </p>
+              <p className="nombre">Dra. Talia Wegman</p>
+              <p className="titulo-ponente">Oncogenética</p>
               <p className="trayectoria text-cyan-900">
-                Médico genetista desde el 2003 con especial interés en
-                dismofología clínica, enfermedades del tejido conectivo y
-                porfirias. Actualmente es Subdirector de Investigación Médica en
-                el Instituto Nacional de Medicina Genómica, médico genetista en
-                Centro Médico ABC Campus Santa Fé y profesor de pregrado en la
-                universidad Anáhuac de norte en la facultad de medicina. Miembro
-                activo de diversas asociaciones nacionales e internacionales
-                como: Asociación Mexicana de Genética Humana, Capitulo de
-                Genética del Colegio Mexicano de Ginecología y Obstetricia,
-                American Porphyria Foundation, American College of Medical
-                Genetics and Genomics, American Society of Human Genetics,
-                European Society of Human Genetics. Miembro de la Asociación
-                Médica y del Staff del Centro Médico ABC, Sociedad Mexicana para
-                Porifira, Unique y The Ehlers-Danlos Society.
+                Médica cirujana de la UNAM, maestría, doctorado y especialidad
+                en genética humana. Posdoc en epidemiología Oncogenetica en NCI
+                en EUA. Investigadora del Instituto Nacional de Cancerología.
+                Miembro de SNI 1. Autora de capítulos y artículos nacionales e
+                internacionales con especial enfoque en enfermedades raras.
+                Galardonada con premios nacionales e internacionales en
+                investigación. Directora del centro Kumar. Miembro del board
+                internacional de agenesia sacra{' '}
               </p>
             </div>
           </div>
@@ -72,10 +64,10 @@ function ComiteL() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dra. Talia Wegman
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Oncogenética
         </p>
       </div>
       <MyVerticallyCenteredModal

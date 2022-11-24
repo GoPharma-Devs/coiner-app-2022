@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJuana_Navarrete.png?alt=media&token=1ad64228-a7de-4323-8bde-797c8c68a2c5';
 interface ComiteFProps {
   nombre?: string;
   titulo?: string;
@@ -34,12 +34,13 @@ function ComiteF() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dra. Juana Navarrete"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
+              <p className="nombre">Dra. Juana Navarrete</p>
               <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
+                Genética Médica - Presidenta de la Asociación Mexicana de
+                Genética Humana{' '}
               </p>
               <p className="trayectoria text-cyan-900">
                 Médico genetista desde el 2003 con especial interés en
@@ -72,10 +73,11 @@ function ComiteF() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dra. Juana Navarrete
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Genética Médica - Presidenta de la Asociación Mexicana de Genética
+          Humana
         </p>
       </div>
       <MyVerticallyCenteredModal

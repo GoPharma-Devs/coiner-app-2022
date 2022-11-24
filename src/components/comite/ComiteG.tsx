@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Modal, Button } from 'react-bootstrap';
 
 const ImgPonente =
-  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FJes%EF%BD%A3s_Navarro.png?alt=media&token=478219ba-9da8-4b74-829e-be257a645497';
+  'https://firebasestorage.googleapis.com/v0/b/assets-coiner2022.appspot.com/o/comite%2FLuz_Mar%C2%A1a_S%C2%A0nchez.png?alt=media&token=d02575e1-c5f6-4db1-b764-6fb1a330b9a8';
 interface ComiteGProps {
   nombre?: string;
   titulo?: string;
@@ -34,28 +34,18 @@ function ComiteG() {
               height={422}
               className="p-4  m-4 "
               src={ImgPonente}
-              alt="Dr. Jesús Navarro"
+              alt="Dra. Luz María Sánchez"
             />
             <div className="texto">
-              <p className="nombre">Dr. Jesús Navarro</p>
-              <p className="titulo-ponente">
-                Presidente Comité Científico COINER® 2022 Genética Médica
-              </p>
+              <p className="nombre">Dra. Luz María Sánchez</p>
+              <p className="titulo-ponente">Pediatría y Neonatología</p>
               <p className="trayectoria text-cyan-900">
-                Médico genetista desde el 2003 con especial interés en
-                dismofología clínica, enfermedades del tejido conectivo y
-                porfirias. Actualmente es Subdirector de Investigación Médica en
-                el Instituto Nacional de Medicina Genómica, médico genetista en
-                Centro Médico ABC Campus Santa Fé y profesor de pregrado en la
-                universidad Anáhuac de norte en la facultad de medicina. Miembro
-                activo de diversas asociaciones nacionales e internacionales
-                como: Asociación Mexicana de Genética Humana, Capitulo de
-                Genética del Colegio Mexicano de Ginecología y Obstetricia,
-                American Porphyria Foundation, American College of Medical
-                Genetics and Genomics, American Society of Human Genetics,
-                European Society of Human Genetics. Miembro de la Asociación
-                Médica y del Staff del Centro Médico ABC, Sociedad Mexicana para
-                Porifira, Unique y The Ehlers-Danlos Society.
+                Trabajó 28 años en el Hospital de Especialidades No. 25 del IMSS
+                en Monterrey, NL y actualmente se dedica a la medicina privada.
+                Se ha dedicado a las enfermedades raras desde hace más de 15
+                años. Miembro de grupos de expertos nacionales e internacionales
+                en enfermedades raras. Profesora de Pediatria por más de 20 años
+                e investigadora clínica del Sistema Nacional de Investigadores.
               </p>
             </div>
           </div>
@@ -72,10 +62,10 @@ function ComiteG() {
       >
         <img className="object-cover w-42 h-52" src={ImgPonente} alt="avatar" />
         <h3 className="mt-4 text-2xl text-center font-semibold text-[#0c4e8b] capitalize ">
-          Dr. Jesús Navarro
+          Dra. Luz María Sánchez
         </h3>
         <p className="mt-1 text-[#ff1ec7] text-center capitalize   max-w-xs  ">
-          Presidente OMER Y JAJAX
+          Pediatría y Neonatología
         </p>
       </div>
       <MyVerticallyCenteredModal
