@@ -48,7 +48,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className=" header p-5 mt-5 sm:mt-1  sm:h-full flex justify-center content-evenly ">
+    <div className=" header p-5 sm:mt-1  sm:h-full flex justify-center content-evenly ">
       <div className="mt-2 sm:mt-2">
         <div className=" md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">

@@ -51,7 +51,7 @@ function Agenda() {
         loading="lazy"
         style={{ color: 'transparent' }}
       />
-      <h2 className="mx-auto max-w-lg text-center font-display text-4xl font-medium tracking-tighter bg-[#7eff2d] text-white rounded-3xl  sm:text-4xl uppercase">
+      <h2 className="mx-auto max-w-lg text-center font-display text-4xl font-medium tracking-tighter bg-[#0C4E8B] py-4 text-white rounded-3xl  sm:text-4xl uppercase">
         Conoce la agenda de <br /> coiner<sup>®</sup> 2022
       </h2>
       <br />
@@ -60,9 +60,12 @@ function Agenda() {
           <Tab
             key={value}
             value={value}
-            className=" py-6 leading-6 bg-[#aedef873] rounded-3xl  m-2 text-[#0d0d0d] hover:bg-[#7eff2d] hover:text-white"
+            className=" py-6 leading-6 bg-[#aedef873] rounded-3xl  m-2 text-[#0d0d0d] hover:bg-[#0C4E8B] hover:text-white"
           >
-            <p className="text-[#1d98dc] font-bold text-2xl	 "> {label}</p>
+            <p className="text-[#1d98dc] font-bold text-2xl mb-0 mt-1	 ">
+              {' '}
+              {label}
+            </p>
             <small className="text-[#ff1ec7] text-sm	 ">{dates}</small>
           </Tab>
         ))}

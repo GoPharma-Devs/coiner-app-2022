@@ -1,7 +1,7 @@
 const withMT = require('@material-tailwind/react/utils/withMT');
 
 module.exports = withMT({
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx,jsx}'],
   theme: {
     fontSize: {
       xs: '0.75rem',

@@ -46,6 +46,8 @@
     "src/counter/Clock.js",
     "src/utils/db.js",
     "src/registro/RegistroPage.jsx",
-    "src/pages/constancia/[id].jsx"
+    "src/pages/constancia/[id].jsx",
+    "src/hooks/useModal.tsx",
+    "src/components/comite/ComiteA.tsx"
   ]
 }
