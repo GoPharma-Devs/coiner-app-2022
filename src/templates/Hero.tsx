@@ -16,9 +16,9 @@ const Hero = () => (
         }
         description="24, 25, 26 y 27 de noviembre 2022."
         button={
-          <Link href="/registro">
+          <Link href="/inicio">
             <a>
-              <Button>Registro</Button>
+              <Button>Acceso al congreso</Button>
             </a>
           </Link>
         }

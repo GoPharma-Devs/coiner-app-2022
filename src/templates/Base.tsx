@@ -1,5 +1,6 @@
 import Agenda from 'components/Agenda';
 import Comite from 'components/Comite';
+import ListaProfesores from 'components/ListaProfesores';
 
 import Counter from '../counter/Counter';
 import { Meta } from '../layout/Meta';
@@ -17,10 +18,31 @@ const Base = () => (
     <Hero />
     <Counter />
     <br />
-
+    <br />
     <VerticalFeatures />
     <Comite />
     <Agenda />
+    <br />
+    <br />
+    <img
+      alt="Comité COINER"
+      src="/adn-h.png"
+      width={227}
+      height={68}
+      className="mx-auto mb-8"
+      decoding="async"
+      data-nimg="future"
+      loading="lazy"
+      style={{ color: 'transparent' }}
+    />
+    <br />
+    <h3 className="text-3xl text-[#0c4e8b] text-center  font-semibold uppercase">
+      Conoce a
+      <br />
+      nuestos profesores
+    </h3>
+
+    <ListaProfesores />
     <section id="sponsors" aria-label="Sponsors" className="py-1 ">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <img
@@ -183,9 +205,34 @@ const Base = () => (
         </div>
       </div>
     </section>
-    {/* <section className="agenda">
-      <Agenda />
-    </section> */}
+    <br />
+    <section>
+      <img
+        alt="Nadie es menos"
+        src="/adn-h.png"
+        width={227}
+        height={68}
+        className="mx-auto mb-8"
+        decoding="async"
+        data-nimg="future"
+        loading="lazy"
+        style={{ color: 'transparent' }}
+      />
+      <h3 className="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-[#0c4e8b] sm:text-4xl">
+        Avalado por:
+      </h3>
+      <img
+        alt="Nadie es menos"
+        src="../assets/images/LOGO_AMGH.png"
+        width={427}
+        height={148}
+        decoding="async"
+        data-nimg="future"
+        loading="lazy"
+        className="mx-auto"
+        style={{ color: 'transparent' }}
+      />
+    </section>
     <Banner />
     <Footer />
   </div>
