@@ -8,7 +8,7 @@ function Counter() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const target = new Date('Nov 24, 2022 19:00:00').getTime();
+      const target = new Date('Nov 27, 2022 13:20:00').getTime();
       const now = new Date().getTime();
       const difference = target - now;
 
@@ -41,7 +41,7 @@ function Counter() {
               d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
-          Reserva la fecha
+          Duración del congreso
         </p>
         <ul className="flex  p-4 leading-9">
           <li className="p-2 flex flex-col text-center">
