@@ -17,7 +17,7 @@ const Hero = () => (
         description="¡Muchas gracias!
         "
         button={
-          <Link href="/REGISTRO">
+          <Link href="/registro">
             <a>
               <Button>Registro</Button>
             </a>
