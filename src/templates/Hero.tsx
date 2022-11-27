@@ -25,8 +25,8 @@ const Hero = () => (
         }
       />
       <h2 className="text-center  mx-auto max-w-2xl p-4">
-        Gracias por tu paricipación en el Congreso Internacional de Enfermedades
-        Raras 2022, nos vemos en la próxima edición.
+        Gracias por tu participación en el Congreso Internacional de
+        Enfermedades Raras 2022, nos vemos en la próxima edición.
       </h2>
     </section>
   </Background>
