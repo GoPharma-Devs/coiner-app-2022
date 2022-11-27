@@ -14,15 +14,20 @@ const Hero = () => (
             <span className="text-primary-500">DE ENFERMEDADES RARAS</span>
           </>
         }
-        description="24, 25, 26 y 27 de noviembre 2022."
+        description="¡Muchas gracias!
+        "
         button={
-          <Link href="/inicio">
+          <Link href="/REGISTRO">
             <a>
-              <Button>Acceso al congreso</Button>
+              <Button>Registro</Button>
             </a>
           </Link>
         }
       />
+      <h2 className="text-center  mx-auto max-w-2xl p-4">
+        Gracias por tu paricipación en el Congreso Internacional de Enfermedades
+        Raras 2022, nos vemos en la próxima edición.
+      </h2>
     </section>
   </Background>
 );

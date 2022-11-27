@@ -2,7 +2,6 @@ import Agenda from 'components/Agenda';
 import Comite from 'components/Comite';
 import ListaProfesores from 'components/ListaProfesores';
 
-import Counter from '../counter/Counter';
 import { Meta } from '../layout/Meta';
 import Navbar from '../navbar/Navbar';
 import { AppConfig } from '../utils/AppConfig';
@@ -16,7 +15,7 @@ const Base = () => (
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar />
     <Hero />
-    <Counter />
+
     <br />
     <br />
     <VerticalFeatures />
